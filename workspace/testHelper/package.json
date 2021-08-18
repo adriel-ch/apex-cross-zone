@@ -1,0 +1,15 @@
+{
+  "name": "testHelper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "api-test-helper": "git+https://github.com/lim-ming-tat/api-test-helper.git"
+  }
+}

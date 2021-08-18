@@ -1,0 +1,26 @@
+{
+	"id" : "2",    
+	"description" : "Bridging API L12.",    
+
+	"authPrefix": "apex_l1_eg",    
+	"realm" : "http://client.com",    
+	"appId" : "training-4Z1q0LxERCV4S5ZQzBpcoa7A",    
+	"secret" : "3cc7463a9b616d595a3a9220a6d5da806b29b3c1",
+		
+	"invokeUrl" : "https://training.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",    
+	"signatureUrl" : "https://training.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",    
+
+	"httpMethod" : "GET",    
+	"queryString" : { "clientname" : "{XX}.node.js.test.l2" },    
+
+	"nextHop": {        
+		"authPrefix": "apex_l2_ig",
+		"realm" : "http://client.com",
+		"appId" : "training-pvt-AjvZR9xR7lC8NKyBjB0qSpSz",
+
+		"signatureUrl" : "https://training-pvt.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",        
+		"httpMethod" : "GET",
+		"privateCertFileName" : "team{XX}.pem",
+		"privateCertFileType" : "pem"
+	}
+}
