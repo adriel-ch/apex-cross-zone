@@ -1,12 +1,23 @@
 {
-  "name": "testHelper",
+  "name": "apex-cross-zone",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repo is meant for APEX trainees to test their APEX cross zone setup. It uses an external module called Test Helper.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriel-ch/apex-cross-zone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adriel-ch/apex-cross-zone/issues"
+  },
+  "homepage": "https://github.com/adriel-ch/apex-cross-zone#readme",
+  "dependencies": {
+    "api-test-helper": "git+https://github.com/lim-ming-tat/api-test-helper.git"
+  }
 }
