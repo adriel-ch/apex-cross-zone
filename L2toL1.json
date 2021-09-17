@@ -4,24 +4,24 @@
 
 	"authPrefix": "apex_l2_eg",    
 	"realm" : "http://training.api.gov.gdshive.com",    
-	"appId" : "app-id",    
+	"appId" : "app-id",    //edit INTERNET app ID and remove this comment
 	
-	"invokeUrl" : "https://training.e.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",    
-	"signatureUrl" : "https://training.e.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",    
+	"invokeUrl" : "https://training.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",    //edit INTERNET context path and remove this comment
+	"signatureUrl" : "https://training.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",    //edit INTERNET context path and remove this comment
 
 	"httpMethod" : "GET",    
 	"queryString" : { "clientname" : "{XX}.node.js.test.l2" },    
 
-	"privateCertFileName" : "team{XX}.pem",    
+	"privateCertFileName" : "team{XX}.pem",    //edit filename and remove this comment
 	"privateCertFileType" : "pem",    
 
 	"nextHop": {        
 		"authPrefix": "apex_l1_ig",        
 		"realm" : "http://training-pvt.api.gov.gdshive.com",        
-		"appId" : "app-id",        
-		"secret" : "app-secret",        
+		"appId" : "app-id",        //edit INTRANET app ID and remove this comment
+		"secret" : "app-secret",        //edit INTRANET app secret and remove this comment
 
-		"signatureUrl" : "https://training-pvt.i.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",        
+		"signatureUrl" : "https://training-pvt.api.gov.gdshive.com/apex/team{XX}/v1/helloworld",        //edit INTRANET context path and remove this comment
 		"httpMethod" : "GET"    
 	}
 }
